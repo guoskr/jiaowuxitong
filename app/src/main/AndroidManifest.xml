@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.shujuku">
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 外部存储权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Shujuku">
+        <activity android:name=".MainActivitysuguan"></activity>
+        <activity android:name=".studentxk" />
+        <activity android:name=".addxkxx" />
+        <activity android:name=".xkxx" />
+        <activity android:name=".addqjxx" />
+        <activity android:name=".qjxx" />
+        <activity android:name=".MainActivitygrade" />
+        <activity android:name=".addbaoxiu" />
+        <activity android:name=".baoxiu" />
+        <activity android:name=".addqj" />
+        <activity android:name=".qingjia" />
+        <activity android:name=".studentMainActivity" />
+        <activity
+            android:name=".MainActivity_mianjiemian"
+            android:label="@string/title_activity_main_mianjiemian"
+            android:theme="@style/Theme.Shujuku.NoActionBar" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".zhuce" />
+        <activity android:name=".search" />
+        <activity android:name=".xsxx" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/style" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity_zhujiemian">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

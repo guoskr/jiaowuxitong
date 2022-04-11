@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imageviw5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentMainActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="412dp"
+        android:text="选课系统"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Shujuku.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.Shujuku.PopupOverlay"
+            app:title="学生教务系统" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- 切换卡 -->
+    <!-- 点点 -->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="554dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/viewGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="194dp"
+        android:layout_marginBottom="537dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewPager"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="327dp"
+        android:layout_marginLeft="327dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginBottom="457dp"
+        android:background="#039BE5"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewPager"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="319dp"
+        android:layout_marginRight="319dp"
+        android:layout_marginBottom="457dp"
+        android:background="#64DD17"
+        app:srcCompat="@drawable/ic_menu_send" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewPager"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginLeft="119dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginRight="223dp"
+        android:layout_marginBottom="457dp"
+        android:background="#2962FF"
+        app:srcCompat="@drawable/ic_menu_manage" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/viewPager"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="228dp"
+        android:layout_marginLeft="228dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginBottom="458dp"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginRight="315dp"
+        android:layout_marginBottom="412dp"
+        android:text="请假销假"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginRight="222dp"
+        android:layout_marginBottom="411dp"
+        android:text="损坏报修"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginBottom="409dp"
+        android:text="成绩查询"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="353dp"
+        android:text="每日资讯"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="236dp"
+        app:srcCompat="@drawable/a4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="66dp"
+        app:srcCompat="@drawable/a6" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="497dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="189dp"
+        android:text="“我和我的祖国”河北大学庆祝中华人民共和国成立70周年师生歌咏比赛"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="656dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="45dp"
+        android:text="河北大学党史学习教育"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+</RelativeLayout>

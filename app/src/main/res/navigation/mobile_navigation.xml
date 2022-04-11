@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/xsxx">
+
+    <fragment
+        android:id="@+id/xsxx"
+        android:name="com.example.shujuku.ui.home.HomeFragment"
+        android:label="@string/学生信息" />
+
+    <fragment
+        android:id="@+id/xkxx"
+        android:name="com.example.shujuku.ui.gallery.GalleryFragment"
+        android:label="@string/选课信息" />
+
+    <fragment
+        android:id="@+id/qjxx"
+        android:name="com.example.shujuku.ui.slideshow.SlideshowFragment"
+        android:label="@string/请假信息" />
+</navigation>

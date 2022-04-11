@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addqj">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="414dp"
+        android:layout_height="76dp"
+        android:background="#FF9800"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="222dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="添加请假信息" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF9800"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="409dp"
+        android:layout_height="543dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.161">
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="学号" />
+
+            <TextView
+                android:id="@+id/textView666"
+
+                style="@style/StuInfoDetail"
+                android:text="111"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="姓名" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:text="111"
+                style="@style/StuInfoDetail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow
+            android:id="@+id/tr_edit_gender"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="理由" />
+
+            <TextView
+                android:id="@+id/tv_edit_gender"
+                style="@style/StuInfoDetail" />
+
+            <ImageView
+                android:id="@+id/trgender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_menu_send" />
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow
+            android:id="@+id/tr_edit_birth"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="出发日期" />
+
+            <TextView
+                android:id="@+id/tv_edit_birth"
+                style="@style/StuInfoDetail"
+                tools:text="1997年1月1日" />
+
+            <ImageView
+                android:id="@+id/trbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_menu_send" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_edit_time"
+            android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="返回日期" />
+
+            <TextView
+                android:id="@+id/tv_edit_time"
+                style="@style/StuInfoDetail"
+                tools:text="1997年1月1日" />
+
+            <ImageView
+                android:id="@+id/tiem"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_menu_send" />
+
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:layout_height="wrap_content"
+                android:text="紧急联系人" />
+
+            <EditText
+                android:id="@+id/et_edit_native_place"
+                style="@style/StuInfoDetail"
+                tools:text="湖南" />
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <TableRow android:padding="@dimen/spacing_normal">
+
+            <TextView
+                style="@style/StuInfoType"
+                android:text="电话" />
+
+            <EditText
+                android:id="@+id/et_edit_phone"
+                style="@style/StuInfoDetail" />
+        </TableRow>
+
+        <View style="@style/WireThinHorizontal" />
+
+        <View style="@style/WireThinHorizontal" />
+
+        <View style="@style/WireThinHorizontal" />
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/de"
+        android:layout_width="247dp"
+        android:layout_height="96dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/spacing_largest"
+        android:paddingTop="@dimen/spacing_largest"
+        android:paddingBottom="@dimen/spacing_largest"
+        android:text="销假"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
